@@ -1005,21 +1005,6 @@ nav {
     color: white;
 }
 
-.footer__copyright::before {
-    content: "hello";
-    position: absolute;
-    width: 50%;
-    top: 0;
-    height: 0;
-    left: 0;
-    transform: translateY(0);
-    transition: translate 300ms ease;
-}
-
-.footer__copyright:hover::after {
-    transform: translateY(50px);
-}
-
 .footer__nav-links--wrapper {
     display: flex;
 }
@@ -1552,6 +1537,12 @@ nav {
         width: 100%;
         margin: 0 16px;
     }
+
+    .footer__copyright {
+        width: 100%;
+        max-width: 150px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 625px) {
@@ -1566,7 +1557,6 @@ nav {
         font-size: 32px;
         width: 100%;
         max-width: 400px;
-        min-width: 300px;
     }
 
     .header__para,
@@ -1578,15 +1568,16 @@ nav {
         font-size: 14px;
         width: 100%;
         max-width: 400px;
-        min-width: 300px;
     }
     
     .header__input--email {
+        width: 200px;
         font-size: 14px;
         padding: 8px 16px;
     }
 
     .header__input--button {
+        width: 100px;
         font-size: 12px;
     }
 
@@ -1684,18 +1675,99 @@ nav {
     }
 
     .invite__button {
+        font-size: 20px;
         width: 200px;
         margin: 16px 0;
+    }
+
+    .footer__row {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .footer__nav--row {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .footer__main--wrapper {
+        width: 100%;
+    }
+
+    .footer__columns {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footer__column {
+        width: 50%;
+        margin-bottom: 24px;
+    }
+
+    .footer__column:nth-child(5) {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer__logo--text {
+        margin-left: 8px;
+        font-size: 16px;
+    }
+
+    .footer__nav-logo--wrapper {
+        order: 1;
+    }
+
+    .footer__copyright {
+        order: 3;
+    }
+
+    .footer__nav-links--wrapper {
+        order: 2;
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+        margin: 24px 0;
+    }
+
+    .circle__container {
+        margin: 0;
     }
 }
 
 @media (max-width: 425px) {
+
+    .header__title {
+        font-size: 24px;
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .header__para {
+        width: 100%;
+        max-width: 250px;
+    }
 
     .invite__wrapper {
         padding: 24px 36px;
     }
 
     .invite__button {
-        height: 60px
+        height: 75px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .invite__message {
+        width: 100%;
+        max-width: 200px;
+        min-width: fit-content;
+        font-size: 24px;
     }
 }
