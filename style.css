@@ -410,7 +410,7 @@ nav {
 }
 
 .quality__description {
-    max-width: 600px;
+    width: 100%;
     color: #7c8ba1;
 }
 
@@ -1068,7 +1068,6 @@ nav {
 
     .quality__description {
         width: 100%;
-        min-width: 450px;
     }
     
     .invite__row {
@@ -1164,22 +1163,19 @@ nav {
     .quality__title,
     .quality__description {
         width: 100%;
-        max-width: 575px;
         text-align: center;
         margin: 0 auto;
         margin-bottom: 32px;
     }
 
     .quality__description {
-        max-width: 500px;
         font-size: 16px;
         padding: 0;
     }
 
     .quality__right--row {
         width: 100%;
-        padding: 24px 48px;
-        margin: 0;
+        margin-top: 24px;
     }
 
     .quality__link--button {
@@ -1326,7 +1322,6 @@ nav {
 
     .values__right--row {
         width: 100%;
-        padding: 0 32px;
     }
     .values__img {
         width: 100%;
@@ -1396,8 +1391,7 @@ nav {
     }
 
     .quality__section,
-    .quality__title,
-    .quality__description {
+    .quality__title {
         width: 100%;
         max-width: 575px;
         text-align: center;
@@ -1406,13 +1400,8 @@ nav {
     }
 
     .quality__description {
-        max-width: 500px;
+        width:100%;
         font-size: 16px;
-    }
-
-    .quality__right--row {
-        width: 100%;
-        padding: 24px 48px;
     }
 
     .quality__link--button {
@@ -1437,7 +1426,7 @@ nav {
     .steps__left--row {
         width: 100%;
         order: 2;
-        padding: 0 32px;
+        padding-top: 24px;
     }
 
     .steps__right--row {
@@ -1498,11 +1487,6 @@ nav {
         margin: 40px 0;
     }
 
-    .values__right--row {
-        width: 100%;
-        padding: 0 32px;
-    }
-
     .values__img {
         width: 100%;
         margin: 0;
@@ -1547,6 +1531,10 @@ nav {
 
 @media (max-width: 625px) {
 
+    .header__container {
+        padding: 48px 0;
+    }
+
     .header__title,
     .features__title,
     .quality__title,
@@ -1567,7 +1555,6 @@ nav {
     .test__description {
         font-size: 14px;
         width: 100%;
-        max-width: 400px;
     }
     
     .header__input--email {
@@ -1619,10 +1606,6 @@ nav {
         width: 70%;
     }
 
-    .steps__left--row {
-        padding-top: 24px;
-    }
-
     .values__left-column--wrapper {
         display: flex;
         flex-direction: column;
@@ -1651,10 +1634,16 @@ nav {
         margin-bottom: 40px;
     }
 
+    .test__profile--circle,
+    .test__profile--img {
+        width: 75px;
+        height: 75px;
+    }
+
     .test__user--name,
     .test__user--title {
         width: 100%;
-        max-width: 80px;
+        max-width: 200px;
         font-size: 14px;
         text-align: center;
     }
@@ -1742,15 +1731,37 @@ nav {
 
 @media (max-width: 425px) {
 
+    .header__container {
+        padding: 48px 0;
+    }
+    
     .header__title {
         font-size: 24px;
         width: 100%;
-        max-width: 250px;
     }
 
     .header__para {
         width: 100%;
         max-width: 250px;
+    }
+
+    .features__item--wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .features__item--texts {
+        margin: 24px 0;
+    }
+
+    .features__list--wrapper {
+        text-align: center;
+    }
+
+    .test__review--title {
+        text-align: center;
     }
 
     .invite__wrapper {
@@ -1760,10 +1771,19 @@ nav {
     .invite__button {
         height: 75px;
     }
+
+    .test__profile--section-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .test__arrow--wrapper {
+        margin: 24px 0;
+    }
 }
 
 @media (max-width: 320px) {
-
+    
     .invite__message {
         width: 100%;
         max-width: 200px;
