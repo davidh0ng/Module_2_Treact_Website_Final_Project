@@ -910,6 +910,10 @@ nav {
 /* --- Footer --- */
 
 
+#footer {
+    background-color: #6415ff;
+}
+
 .footer__columns {
     width: 100%;
     display: flex;
